@@ -2,7 +2,7 @@ import ProjectCard from "@/components/ProjectCard";
 import SectionHeader from "@/components/SectionHeader";
 import { projects } from "@/lib/data";
 
-export default function ProjectsSection() {
+export default function FeaturedProjects() {
   return (
     <section className="py-12">
       <SectionHeader title="Featured Projects" />
