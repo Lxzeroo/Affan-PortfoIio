@@ -1,0 +1,23 @@
+
+> affan-portfolio@0.1.0 dev
+> next dev
+
+▲ Next.js 16.2.9 (Turbopack)
+- Local:         http://localhost:3000
+- Network:       http://192.168.1.4:3000
+✓ Ready in 671ms
+
+⨯ ./src/app/page.tsx:19:1
+Expression expected
+  [90m17 |[0m     </main>
+  [90m18 |[0m   );
+[31m[1m>[0m [90m19 |[0m >
+  [90m   |[0m [31m[1m^[0m
+
+Parsing ecmascript source code failed
+
+
+ GET / 500 in 3.4s (next.js: 3.2s, application-code: 185ms)
+✓ Compiled in 38ms
+✓ Compiled in 30ms
+[?25h
