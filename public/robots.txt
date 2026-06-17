@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://affan-imthiyaz.netlify.app/sitemap.xml
