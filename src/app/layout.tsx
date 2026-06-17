@@ -5,7 +5,8 @@ import "./globals.css";
 export const metadata: Metadata = {
   metadataBase: new URL("https://affan-imthiyaz.netlify.app"),
 
-  title: "Affan Imthiyaz Ahmed | Full-Stack Developer, AI Engineer & Product Builder",
+  title:
+    "Affan Imthiyaz Ahmed | Full-Stack Developer, AI Engineer & Product Builder",
 
   description:
     "Portfolio of Affan Imthiyaz Ahmed showcasing Full-Stack Development, AI Engineering, Java, Python, NVIDIA Nemotron projects, AI-powered applications, and scalable web solutions.",
@@ -52,16 +53,26 @@ export const metadata: Metadata = {
   robots: {
     index: true,
     follow: true,
-    googleBot: {
-      index: true,
-      follow: true,
-      "max-video-preview": -1,
-      "max-image-preview": "large",
-      "max-snippet": -1,
-    },
   },
 
   alternates: {
     canonical: "https://affan-imthiyaz.netlify.app",
   },
 };
+
+export default function RootLayout({
+  children,
+}: Readonly<{
+  children: React.ReactNode;
+}>) {
+  return (
+    <html
+      lang="en"
+      className={`${kalam.variable} ${patrickHand.variable} h-full`}
+    >
+      <body className="min-h-full flex flex-col bg-background text-foreground paper-grain">
+        {children}
+      </body>
+    </html>
+  );
+}
